@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0716FE9D2A35D88C00B5AA1B /* VideoRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FE9C2A35D88C00B5AA1B /* VideoRecorderApp.swift */; };
-		0716FE9F2A35D88C00B5AA1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FE9E2A35D88C00B5AA1B /* ContentView.swift */; };
+		0716FE9F2A35D88C00B5AA1B /* VideoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FE9E2A35D88C00B5AA1B /* VideoContentView.swift */; };
 		0716FEA12A35D88D00B5AA1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0716FEA02A35D88D00B5AA1B /* Assets.xcassets */; };
 		0716FEA42A35D88D00B5AA1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0716FEA32A35D88D00B5AA1B /* Preview Assets.xcassets */; };
 		0716FEAE2A35D88D00B5AA1B /* VideoRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FEAD2A35D88D00B5AA1B /* VideoRecorderTests.swift */; };
 		0716FEB82A35D88D00B5AA1B /* VideoRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FEB72A35D88D00B5AA1B /* VideoRecorderUITests.swift */; };
 		0716FEBA2A35D88D00B5AA1B /* VideoRecorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FEB92A35D88D00B5AA1B /* VideoRecorderUITestsLaunchTests.swift */; };
+		0716FEC72A35D8FF00B5AA1B /* AuthorizationChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FEC62A35D8FF00B5AA1B /* AuthorizationChecker.swift */; };
+		0716FEC92A35D94100B5AA1B /* VideoContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FEC82A35D94100B5AA1B /* VideoContentViewModel.swift */; };
+		0716FECB2A35EFE400B5AA1B /* VideoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716FECA2A35EFE400B5AA1B /* VideoError.swift */; };
+		9C59F3342A3AE77000F28313 /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C59F3332A3AE77000F28313 /* Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		0716FE992A35D88C00B5AA1B /* VideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0716FE9C2A35D88C00B5AA1B /* VideoRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderApp.swift; sourceTree = "<group>"; };
-		0716FE9E2A35D88C00B5AA1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0716FE9E2A35D88C00B5AA1B /* VideoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentView.swift; sourceTree = "<group>"; };
 		0716FEA02A35D88D00B5AA1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0716FEA32A35D88D00B5AA1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0716FEA92A35D88D00B5AA1B /* VideoRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		0716FEB32A35D88D00B5AA1B /* VideoRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0716FEB72A35D88D00B5AA1B /* VideoRecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderUITests.swift; sourceTree = "<group>"; };
 		0716FEB92A35D88D00B5AA1B /* VideoRecorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0716FEC62A35D8FF00B5AA1B /* AuthorizationChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationChecker.swift; sourceTree = "<group>"; };
+		0716FEC82A35D94100B5AA1B /* VideoContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContentViewModel.swift; sourceTree = "<group>"; };
+		0716FECA2A35EFE400B5AA1B /* VideoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoError.swift; sourceTree = "<group>"; };
+		9C59F3332A3AE77000F28313 /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				0716FE9C2A35D88C00B5AA1B /* VideoRecorderApp.swift */,
-				0716FE9E2A35D88C00B5AA1B /* ContentView.swift */,
+				0716FE9E2A35D88C00B5AA1B /* VideoContentView.swift */,
+				0716FEC82A35D94100B5AA1B /* VideoContentViewModel.swift */,
+				9C59F3332A3AE77000F28313 /* Preview.swift */,
+				0716FECA2A35EFE400B5AA1B /* VideoError.swift */,
+				0716FEC62A35D8FF00B5AA1B /* AuthorizationChecker.swift */,
 				0716FEA02A35D88D00B5AA1B /* Assets.xcassets */,
 				0716FEA22A35D88D00B5AA1B /* Preview Content */,
 			);
@@ -257,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0716FE9F2A35D88C00B5AA1B /* ContentView.swift in Sources */,
+				0716FECB2A35EFE400B5AA1B /* VideoError.swift in Sources */,
+				0716FEC92A35D94100B5AA1B /* VideoContentViewModel.swift in Sources */,
+				0716FE9F2A35D88C00B5AA1B /* VideoContentView.swift in Sources */,
 				0716FE9D2A35D88C00B5AA1B /* VideoRecorderApp.swift in Sources */,
+				9C59F3342A3AE77000F28313 /* Preview.swift in Sources */,
+				0716FEC72A35D8FF00B5AA1B /* AuthorizationChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,6 +436,9 @@
 				DEVELOPMENT_TEAM = W6QHM4Y43Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I'll use camera!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Access album";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access album";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +468,9 @@
 				DEVELOPMENT_TEAM = W6QHM4Y43Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "I'll use camera!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Access album";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access album";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
